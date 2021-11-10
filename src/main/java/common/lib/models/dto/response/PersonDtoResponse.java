@@ -14,13 +14,10 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PersonDtoResponse {
-
     private Long id;
     private String name;
     private Long age;
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     private LocalDate dateOfBirth;
     private String email;
-    private String login;
-    private String pass;
 }

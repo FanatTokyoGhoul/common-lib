@@ -1,4 +1,4 @@
-package common.lib.models.dto.request;
+package common.lib.models.dto.response;
 
 
 import lombok.AllArgsConstructor;
@@ -13,9 +13,9 @@ import java.time.LocalDate;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class PersonDtoRequest {
-    private String login;
-    private String pass;
+public class PersonDtoResponseWithToken {
+    private String token;
+    private Long id;
     private String name;
     private Long age;
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
